@@ -1,9 +1,11 @@
 float y;
 float size = 65;
 
+
 void setup()
 {
 size (900, 700);
+
 }
 void matahari(){
 fill(255,235,52);
@@ -49,6 +51,65 @@ void air(){
   noStroke();
   fill(#364EBF);
   quad(350,200,550,200,550,430,350,430);
+strokeWeight(5);
+  noStroke();
+int d,e,f;
+  d=second();
+  e=minute();
+  f=hour();
+
+  stroke(255);
+  point(40,100+25*d);
+  point(50,100+15*d);
+  point(30,100+20*d);
+  point(60,120+15*d);
+  point(70,110+20*d);
+  point(80,130+25*d);
+  point(90,100+25*d);
+  point(100,110+30*d);
+  point(110,115+20*d);
+  point(120,100+25*d);
+  point(130,115+15*d);
+  point(140,110+10*d);
+  point(150,115+25*d);
+  point(160,125+10*d);
+  point(170,120+10*d);
+  point(180,100+25*d);
+  point(190,120+20*d);
+  point(200,125+35*d);
+  point(210,115+10*d);
+  point(220,105+15*d);
+  point(230,125+20*d);
+  point(240,110+25*d);
+  point(250,110+10*d);
+  point(260,100+15*d);
+  point(270,125+25*d);
+  point(280,100+20*d);
+  point(290,115+10*d);
+  point(300,120+15*d);
+  point(310,100+25*d);
+  point(320,125+20*d);
+  point(330,120+10*d);
+  point(340,110+25*d);
+  point(350,115+15*d);
+  point(360,125+15*d);
+  point(370,100+10*d);
+  point(380,115+25*d);
+  point(390,100+20*d);
+  point(400,125+15*d);
+//awan
+noStroke();
+fill(95,158,160);
+ellipse(20+55*d,150,30,15);
+ellipse(50+55*d,150,45,35);
+ellipse(80+55*d,150,30,15);
+
+fill(95,158,160);
+ellipse(40+30*d,120,30,10);
+ellipse(80+30*d,120,40,30);
+ellipse(100+30*d,120,20,10);
+
+
 }
 
 void pohon(){
@@ -78,6 +139,9 @@ void pohon(){
   ellipse(680,270,150,100);
   ellipse(790,250,230,200);
   ellipse(640,200,150,100);
+
+
+
 }
 
 void kolam(){
@@ -97,11 +161,13 @@ void batuKolam(){
  arc(450,550,80,60,PI,TWO_PI);
  arc(590,600,105,80,PI,TWO_PI);
  arc(550,600,50,30,PI,TWO_PI);
+
  
 }
 
 void draw(){
 background(#CEFBFF);  
+
 
 matahari();
  tanah();
